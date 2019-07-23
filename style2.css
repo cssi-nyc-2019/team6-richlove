@@ -1,0 +1,18 @@
+
+#Button2 {
+  border: none;
+  background-color: inherit;
+  padding: 14px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+
+
+
+  color: red;
+}
+
+#Button2:hover {
+  background-color: red;
+  color: black;
+}
