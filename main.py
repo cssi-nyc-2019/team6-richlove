@@ -15,7 +15,7 @@ the_jinja_env = jinja2.Environment(
 # the handler section
 class MainHandler(webapp2.RequestHandler):
   def get(self):  # for a get request
-    self.response.write('Greetings')  # the response
+    self.response.write('Greeting')  # the response
 
 
 # the app configuration section	
