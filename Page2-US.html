@@ -6,9 +6,8 @@
 body {
   font-family: "Lato", sans-serif;
   
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/c/c5/Moraine_Lake_17092005.jpg);
+  background-image: url(http://eskipaper.com/images/city-background-12.jpg);
 }
-
 .sidenav {
   height: 100%;
   width: 0;
@@ -16,25 +15,23 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #000000;
+  background-color: white;
+  opacity: 0.5;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
 }
-
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #ffffffff;
+  color: #818181;
   display: block;
   transition: 0.3s;
 }
-
 .sidenav a:hover {
-  color: gray;
+  color: blue;
 }
-
 .sidenav .closebtn {
   position: absolute;
   top: 0;
@@ -49,25 +46,19 @@ span{
 font-weight:bold;
 border: 4px solid black;
 }
-
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
-#canadaword{
-
-
-
-}
 p{
   
- 
+ color: black;
  display: block;
-
- background-color: gray;
+ background-color: white;
 font-family: "Helvetica neue, Helvetica"
   vertical-align: middle;
  display: block;
+ opacity: 0.7;
 font-size: 56px;
  vertical-align: middle;
  display: block;
@@ -77,14 +68,15 @@ font-size: 56px;
  margin-right: 8px;
  width: 50%;
  border-radius: 35px;
- border: 5px solid white;
+ border: 5px solid black;
  color: black;
   text-align: center;
+}
 
 }
 </style>
 </head>
-<body id="Home">
+<body>
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -95,27 +87,21 @@ font-size: 56px;
   <a href="#Restaurants">Restaurants </a>
   <a href="#Translator">Translator</a>
   <a href="#About">About</a>
+  
 </div>
 
 
 
-<span id="canadaWord" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
-<p>Canada</p>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+<p>United States</p>
 <script>
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
 }
-
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 </script>
    
 </body>
-
-
-<body>
-  
-</body>
 </html> 
-
