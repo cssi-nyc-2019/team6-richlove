@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="style2.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <style>
 body {
   font-family: "Lato", sans-serif;
+  
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/c/c5/Moraine_Lake_17092005.jpg);
 }
 
 .sidenav {
@@ -16,7 +16,7 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: #ff1c1c;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -32,7 +32,7 @@ body {
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: black;
 }
 
 .sidenav .closebtn {
@@ -42,28 +42,58 @@ body {
   font-size: 36px;
   margin-left: 50px;
 }
-  
+#mySidenav{
+color:black
+}
+span{
+font-weight:bold;
+border: 4px solid black;
+}
+
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+p{
+  
+ 
+ display: block;
+
+ background-color: gray;
+font-family: "Helvetica neue, Helvetica"
+  vertical-align: middle;
+ display: block;
+ opacity: 0.4;
+font-size: 56px;
+ vertical-align: middle;
+ display: block;
+ margin-bottom: 12px;
+ margin-top: 210px;
+ margin-left: 335px;
+ margin-right: 8px;
+ width: 50%;
+ border-radius: 35px;
+ border: 5px solid white;
+ color: black;
+  text-align: center;
+
+}
 </style>
 </head>
-<body id="bodyBegining">
- 
+<body>
+
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#bodyBegining">Main</a>
-  <a href="#attractions">Places To Visit</a>
-  <a href="#translator">Translater</a>
-  <a href="#weather">Weather</a>
-  <a href="#">Place To Stay</a>
+  <a href="#">Weather</a>
+  <a href="#">Attractions</a>
+  <a href="#">Restaurants </a>
+  <a href="#">About</a>
 </div>
 
-<h2></h2>
-<p></p>
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
 
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+<p>Canada</p>
 <script>
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
@@ -73,7 +103,7 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 </script>
-<br>
-   <button id="Button2"> <a href="project.html"> back to start</a> </button> 
+   
 </body>
-</html>
+</html> 
+
