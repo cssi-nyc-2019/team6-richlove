@@ -24,8 +24,8 @@ body {
 }
 
 /* Modal Content */
-.modal-content {
-  background-color: #fefefe;
+.modal-content1 {
+  background-color: white;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
@@ -34,7 +34,7 @@ body {
 
 /* The Close Button */
 .close {
-  color: #aaaaaa;
+  color: black;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -42,7 +42,7 @@ body {
 
 .close:hover,
 .close:focus {
-  color: #000;
+  color: white;
   text-decoration: none;
   cursor: pointer;
 }
@@ -54,11 +54,12 @@ body {
   font-size: 16px;
   cursor: pointer;
   display: inline-block;
+  font-family:PT sans narrow;
 }
 
-.btn:hover {background: #eee;}
+/*.btn:hover {background: blue;}*/
 
-.success {color: green;}
+.success {color: white;}
 .info {color: dodgerblue;}
 .warning {color: orange;}
 .danger {color: red;}
@@ -130,6 +131,11 @@ font-size: 56px;
  color: black;
   text-align: center;
 }
+#what1{
+  background-color: white;
+}
+
+}
 
 }
 </style>
@@ -139,28 +145,86 @@ font-size: 56px;
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   
-  <button class ="btn success"id="myBtn">Open Modal</button>
+  <button class ="btn success"id="myBtn">Bio</button>
+  <br>
+  <hr>
+  <button class ="btn success"id="myBtn2">Weather</button>
+  <br>
+  <hr>
+  <button class ="btn success"id="myBtn3">Attractions</button>
+  <br>
+  <hr>
+  <button class ="btn success"id="myBtn4">Restaurants</button>
+  <br>
+  <hr>
+  <button class ="btn success"id="myBtn5">Translator</button>
+  <br>
+  <hr>
+  <button class ="btn success"id="myBtn6">About</button>
+  <br>
+  <hr>
+</div>
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
 
+
   <!-- Modal content -->
   <div class="modal-content">
     <span class="close">&times;</span>
-    <p>what ever you want to do</p>
+    <p>Brazil, officially the Federative Republic of Brazil, is the largest country in both South America and Latin America. At 8.5 million square kilometers and with over 208 million people, Brazil is the </p>
   </div>
-
 </div>
+
+
 
 <script>
 // Get the modal
-var modal = document.getElementById("myModal");
+var modal1 = document.getElementById("myModal");
 
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn1.onclick = function() {
+  modal1.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal1.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal1.style.display = "none";
+  }
+}
+
+</script>
+  
+<div id="myModal2" class="modal">
+
+
+  <!-- Modal content -->
+  <div class="modal-content2">
+    <span class="close2">&times;</span>
+    <p class="">what ever you want to do</p>
+  </div>
+</div>
+<script>
+// Get the modal
+var modal2 = document.getElementById("myModal2");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn2");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close2")[0];
 
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
@@ -175,21 +239,173 @@ span.onclick = function() {
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
-    modal.style.display = "none";
+    modal2.style.display = "none";
   }
 }
 </script>
+<div id="myModal3" class="modal">
 
 
-  <a href="#">Attractions</a>
-  <a href="#">Restaurants </a>
-  <a href="#">About</a>
+  <!-- Modal content -->
+  <div class="modal-content3">
+    <span class="close3">&times;</span>
+    <p>what ever you  to do</p>
+  </div>
+</div>
+  <script>
+// Get the modal
+var modal3 = document.getElementById("myModal3");
+
+// Get the button that opens the modal
+var btn3 = document.getElementById("myBtn3");
+
+// Get the <span> element that closes the modal
+var span3 = document.getElementsByClassName("close3")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal3.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal3.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+</script>
+
+<div id="myModal4" class="modal">
+
+
+  <!-- Modal content -->
+  <div class="modal-content4">
+    <span class="close4">&times;</span>
+    <p>what o do</p>
+  </div>
+</div>
+
+<script>
+// Get the modal
+var modal4 = document.getElementById("myModal4");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn4");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close4")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal4.style.display = "none";
+  }
+}
+
+</script>
+<div id="myModal5" class="modal">
+
+
+  <!-- Modal content -->
+  <div class="modal-content5">
+    <span class="close5">&times;</span>
+    <p>do</p>
+  </div>
+</div>
+
+<script>
+// Get the modal
+var modal5 = document.getElementById("myModal5");
+
+// Get the button that opens the modal
+var btn5 = document.getElementById("myBtn5");
+
+// Get the <span> element that closes the modal
+var span5 = document.getElementsByClassName("close5")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal5.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal5.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+</script>
+
+<div id="myModal6" class="modal">
+
+
+  <!-- Modal content -->
+  <div class="modal-content6">
+    <span class="close6">&times;</span>
+    <p>w</p>
+  </div>
+</div>
+
+<script>
+// Get the modal
+var modal6 = document.getElementById("myModal6");
+
+// Get the button that opens the modal
+var btn6= document.getElementById("myBtn6");
+
+// Get the <span> element that closes the modal
+var span6 = document.getElementsByClassName("close6")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal6.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal6.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+</script>
+
+
+
+
 </div>
 
 
 
 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
-<p>Brazil 🇧🇷</p>
+<p id="brazil">Brazil 🇧🇷</p>
 <script>
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
@@ -201,53 +417,6 @@ function closeNav() {
 
 
 
-
-
-
-
-
-
-
-<button id="myBtn">Open Modal</button>
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>Some text in the Modal..</p>
-  </div>
-
-</div>
-
-<script>
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
    
 </body>
 </html> 
