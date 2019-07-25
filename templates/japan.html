@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+  
+  background-image: url(https://www.planetware.com/photos-large/JPN/japan-attractions-nara.jpg);
+   background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 100%; 
+}
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#text1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+button{
+border-radius:6px;
+font-size:20px;
+width:15%;
+/*margin-left:14px;*/
+text-decoration: 
+}
+
+
+#japan{
+  text-align: center;
+  display: block;
+ background-color: gray;
+font-family: "Helvetica neue, Helvetica";
+font-weight: bold;
+ display: block;
+font-size: 56px;
+ vertical-align: middle;
+ display: block;
+ margin-bottom: 12px;
+ margin-top: 0px;
+ margin-left: 335px;
+ margin-right: 8px;
+ width: 50%;
+ border-radius: 35px;
+ border: 5px solid black;
+ color: black;
+
+}
+</style>
+</head>
+<body>
+
+<!--<div id="overlay1" onclick="off()">
+  <div id="text1">Overlay Text</div>
+</div>-->
+
+<div style="padding:20px">
+  <h2></h2>
+  <button onclick="on()">Weather</button>
+</div>
+ <div id="overlay2" onclick="off()">
+  <div id="text2"></div>
+</div>
+<script>
+function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
+</script>
+
+
+
+<div style="padding:20px">
+  <h2></h2>
+  <button onclick="on()">Hotels</button>
+</div>
+<div id="overlay3" onclick="off()">
+  <div id="text3">Test</div>
+</div>
+<script>
+function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
+</script>
+
+<div style="padding:20px">
+  <h2></h2>
+  <button onclick="on()">Restaurants </button>
+</div>
+<div id="overlay4" onclick="off()">
+  <div id="text4">Hi</div>
+</div>
+<script>
+function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
+</script>
+<div style="padding:20px">
+  <h2></h2>
+  <button onclick="on()">Generic Word Translator</button><div id="overlay" onclick="off()">
+  <div id="text4">Something</div>
+</div>
+<script>
+function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
+</script>
+
+<div style="padding:20px">
+  <h2></h2>
+  <button onclick="on()">About</button>
+  <div id="overlay5" onclick="off()">
+  <div id="text5">Overlay Text</div>
+</div>
+<script>
+function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
+</script>
+
+</div>
+
+
+
+
+<p id="japan">Japan</p>
+<script>
+function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
+</script>
+
+
+   
+</body>
+</html> 
