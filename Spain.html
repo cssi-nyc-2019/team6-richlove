@@ -6,10 +6,7 @@
 body {
   font-family: "Lato", sans-serif;
   
-  background-image: url(https://travel.home.sndimg.com/content/dam/images/travel/fullset/2012/06/15/72/peru-inca-sites-machu-picchu.rend.hgtvcom.616.462.suffix/1491581977263.jpeg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-size: 100%;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgNhRDtu2jU4LfT8lW4z7cFp1mdsgAjBsk46H48LrckLL8XVMV);
 }
 .modal {
   display: none; /* Hidden by default */
@@ -55,20 +52,20 @@ body {
   font-family:PT sans narrow;
 }
 /*.btn:hover {background: blue;}*/
-.success {color: black;}
+.success {color: white;}
 .info {color: dodgerblue;}
 .warning {color: orange;}
 .danger {color: red;}
 .default {color: black;}
 .sidenav {
   height: 100%;
-  width: 20%;
+  width: 25%;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: white;
-  opacity: 0.6;
+  background-color: blue;
+  opacity: 0.5;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -77,12 +74,12 @@ body {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: black;
+  color: white;
   display: block;
   transition: 0.3s;
 }
 .sidenav a:hover {
-  color: red;
+  color: black;
 }
 .sidenav .closebtn {
   position: absolute;
@@ -96,7 +93,7 @@ color:white;
 }
 span{
 font-weight:bold;
-border: 4px solid white;
+border: 4px solid green;
 }
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
@@ -106,7 +103,7 @@ p{
   
  color: white;
  display: block;
- background-color: white;
+ background-color: green;
 font-family: "Helvetica neue, Helvetica"
   vertical-align: middle;
  display: block;
@@ -139,7 +136,7 @@ font-size: 56px;
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   
-  <button onclick="window.location.href = 'Page2.html';" class ="btn success"id="myBtn">Home</a></button>
+  <button class ="btn success"id="myBtn">Home</button>
   <br>
   <hr>
   <a href="https://glory-penguin.glitch.me/"> weather</a>
@@ -159,15 +156,16 @@ font-size: 56px;
   <hr>
 </div>
 
+<!-- The Modal -->
+<div id="myModal" class="modal">
 
-<!--<div id="myModal" class="modal">
 
-
-   <div class="modal-content">
+  <!-- Modal content -->
+  <div class="modal-content">
     <span class="close">&times;</span>
-    <p id="peru"></p>
+    <p id="peru">Brazil (Portuguese: Brasil; Portuguese pronunciation: [bɾaˈziw]),[nt 1] officially the Federative Republic of Brazil (Portuguese: República Federativa do Brasil, About this soundlisten (help·info)),[9] is the largest country in both South America and Latin America. At 8.5 million square kilometers (3.2 million square miles)[10] and with over 208 million people, Brazil is the world's fifth-largest country by area and the fifth most populous. Its capital is Brasília, and its most populated city is São Paulo. The federation is composed of the union of the 26 states, the Federal District, and the 5,570 municipalities. It is the largest country to have Portuguese as an official language and the only one in the Americas;[11][12] it is also one of the most multicultural and ethnically diverse nations, due to over a century of mass immigration from around the world.
   </div>
-</div>-->
+</div>
 
 
 
@@ -175,7 +173,7 @@ font-size: 56px;
 // Get the modal
 var modal = document.getElementById("myModal");
 // Get the button that opens the modal
-//var btn = document.getElementById("myBtn");
+var btn = document.getElementById("myBtn");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 // When the user clicks the button, open the modal 
@@ -198,7 +196,7 @@ window.onclick = function(event) {
 <div id="myModal2" class="modal">
 
 
-    
+  <!-- Modal content -->
   <div class="modal-content2">
     <span class="close2">&times;</span>
     <p class="">yo</p>
@@ -226,7 +224,6 @@ window.onclick = function(event) {
   }
 }
 </script>
-
 <div id="myModal3" class="modal">
 
 
@@ -365,7 +362,7 @@ window.onclick = function(event) {
 
 
 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
-<p >Peru</p>
+<p >Spain</p>
 <script>
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
