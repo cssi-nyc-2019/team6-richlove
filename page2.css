@@ -1,0 +1,141 @@
+
+
+body {
+
+			background-image: url("https://storage.needpix.com/rsynced_images/postcard-2851906_1280.jpg");
+		}
+
+		.square {
+		  height: 450px;
+		  width: 550px;
+		  background-color: black;
+		  opacity: 0.7;
+		  vertical-align: middle;
+		  display: block;
+		  margin-bottom: 12px;
+		  margin-top: 210px;
+		  margin-left: 335px;
+		  margin-right: 8px;
+		  width: 50%;
+		  border-radius: 35px;
+		  border: 5px solid red;
+		}
+
+			h1{
+			color:white;
+			text-align: center;
+			font-family:acme;
+			font-size:45px;
+		}
+
+		p{
+			color:white;
+			text-align: center;
+			font-family:PT sans narrow;
+			font-size:25px;
+		}
+
+		/*form{
+			color:white;
+			text-align:center;
+			margin-bottom: 200px;
+		    margin-top: 50px;
+		    margin-left: 20px;
+		    margin-right: 550px;*/
+		}
+
+		.name{
+			color:white;
+			background-color:red;
+		}
+
+		.dropbtn {
+	  background-color: #4CAF50;
+	  color: white;
+	  padding: 16px;
+	  font-size: 20px;
+	  border: none;
+	  font-family:ropa sans;
+
+	}
+
+	.dropdown {
+	  position: relative;
+	  display: inline-block;
+	  margin-bottom: 500px;
+	  margin-top: 15px;
+	  margin-left: 150px;
+	  margin-right: 30px;
+	}
+	.yesterday {
+	  position: relative;
+	  display: inline-block;
+	  margin-bottom: 30px;
+	  margin-top: 130px;
+	  margin-left: 100px;
+	  margin-right: 20px;
+	}
+	.martes {
+	  background-color: #4CAF50;
+	  color: white;
+	  padding: 16px;
+	  font-size: 20px;
+	  border: none;
+	  font-family:ropa sans;
+
+	}
+	.monday {
+	  display: none;
+	  position: absolute;
+	  background-color: #f1f1f1;
+	  min-width: 160px;
+	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	  z-index: 1;
+	}
+	.monday a {
+	  color: black;
+	  padding: 12px 16px;
+	  text-decoration: none;
+	  display: block;
+	}
+
+	.dropdown-content {
+	  display: none;
+	  position: absolute;
+	  background-color: #f1f1f1;
+	  min-width: 160px;
+	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	  z-index: 1;
+	}
+
+	.dropdown-content a {
+	  color: black;
+	  padding: 12px 16px;
+	  text-decoration: none;
+	  display: block;
+	}
+
+	/*#Namerica {
+		display: none;
+	  position: absolute;
+	  background-color: #f1f1f1;
+	  min-width: 160px;
+	  box-shadow: 13px 8px 16px 12px rgba(0,0,0,0.2);
+	  z-index: 1;*/
+	}
+
+	/*#Namerica a:hover {background-color: #ddd;}
+
+	.dropdown:hover #Namerica {display: block;}*/
+
+	.dropdown-content a:hover {background-color: #ddd;}
+
+	.monday a:hover {background-color: #ddd;}
+
+	.dropdown:hover .dropdown-content {display: block;}
+
+	.yesterday:hover .monday {display: block;}
+
+	.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+	.yesterday:hover .martes {background-color: #3e8e41;}
